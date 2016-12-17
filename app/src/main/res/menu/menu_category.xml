@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <item
+      android:id="@+id/spinner_category"
+      android:title="@string/spinner_category"
+      app:actionViewClass="android.widget.Spinner"
+      app:showAsAction="ifRoom"/>
+  <item
+      android:id="@+id/spinner_vol"
+      android:title="@string/spinner_vol"
+      app:actionViewClass="android.widget.Spinner"
+      app:showAsAction="always"/>
+  <item
+      android:id="@+id/spinner_alpha_bet"
+      android:title="@string/spinner_alpha_bet"
+      app:actionViewClass="android.widget.Spinner"
+      app:showAsAction="always"/>
+</menu>

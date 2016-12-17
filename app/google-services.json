@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "717823503309",
+    "firebase_url": "https://karaoke-list-viet.firebaseio.com",
+    "project_id": "karaoke-list-viet",
+    "storage_bucket": "karaoke-list-viet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:717823503309:android:2170f9e1e3f0a29d",
+        "android_client_info": {
+          "package_name": "com.huynn109.karaokelistviet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "717823503309-94ruaq6t9am100bunjklp393mqh1jh1a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.huynn109.karaokelistviet",
+            "certificate_hash": "D26A784C984DD31C2357791B942770031FD20C28"
+          }
+        },
+        {
+          "client_id": "717823503309-opjsnr3ngsgamuerfkjdlnq6r94q2j96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAH8-hD3bmiVWuQpgBpVwEtvXG2cMdX8QA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "717823503309-opjsnr3ngsgamuerfkjdlnq6r94q2j96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

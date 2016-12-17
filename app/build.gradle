@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'realm-android'
+
+android {
+  compileSdkVersion rootProject.ext.compileSdkVersion
+  buildToolsVersion rootProject.ext.buildToolsVersion
+  defaultConfig {
+    applicationId rootProject.ext.applicationId
+    minSdkVersion rootProject.ext.minSdkVersion
+    targetSdkVersion rootProject.ext.targetSdkVersion
+    versionCode rootProject.ext.codeVersion
+    versionName rootProject.ext.nameVersion
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+}
+
+dependencies {
+  compile fileTree(dir: 'libs', include: ['*.jar'])
+  androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    exclude group: 'com.android.support', module: 'support-annotations'
+  })
+  compile "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+  compile "com.android.support:recyclerview-v7:$rootProject.supportLibraryVersion"
+  compile "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
+  compile "com.android.support:design:$rootProject.supportLibraryVersion"
+  compile "com.roughike:bottom-bar:$rootProject.libraryBottomBarVersion"
+  compile "com.ncapdevi:frag-nav:$rootProject.libraryBottomBarFragmentVersion"
+  compile "com.jakewharton:butterknife:$rootProject.libraryButterKnifeVersion"
+  annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.libraryButterKnifeVersion"
+  compile "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+  compile "io.realm:android-adapters:$rootProject.libraryRealmAdapterVersion"
+  compile "com.google.firebase:firebase-ads:$rootProject.libraryFirebaseVersion"
+  compile "com.google.firebase:firebase-messaging:$rootProject.libraryFirebaseVersion"
+  testCompile 'junit:junit:4.12'
+}
+
+apply plugin: 'com.google.gms.google-services'
+

@@ -1,0 +1,47 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+  repositories {
+    jcenter()
+    mavenCentral()
+  }
+  dependencies {
+    classpath 'com.android.tools.build:gradle:2.2.3'
+    classpath 'com.jakewharton:butterknife-gradle-plugin:8.4.0'
+    classpath 'io.realm:realm-gradle-plugin:2.2.1'
+    classpath 'com.google.gms:google-services:3.0.0'
+  }
+}
+
+allprojects {
+  repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+  }
+}
+
+ext {
+
+  applicationId = "com.huynn109.karaokelistviet"
+  // sdk and tools
+  minSdkVersion = 15
+  targetSdkVersion = 25
+  compileSdkVersion = 25
+  buildToolsVersion = '25.0.2'
+
+  // dependencies versions
+  supportLibraryVersion = '25.1.0'
+  libraryBottomBarVersion = '2.0.2'
+  libraryBottomBarFragmentVersion = '1.2.5'
+  libraryButterKnifeVersion = '8.4.0'
+  libraryRealmAdapterVersion = '1.4.0'
+  libraryFirebaseVersion = '10.0.1'
+
+  // version code, version name
+  codeVersion = 1
+  nameVersion = "0.0.1"
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}

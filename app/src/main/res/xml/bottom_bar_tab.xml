@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+  <tab
+      activeColor="@color/colorPrimary"
+      icon="@drawable/ic_search_white_24dp"
+      id="@+id/tab_search"
+      inActiveColor="@color/colorPrimary"
+      title="@string/label_search"
+      />
+  <tab
+      activeColor="@color/colorPrimary"
+      icon="@drawable/ic_queue_music_white_24dp"
+      id="@+id/tab_category"
+      inActiveColor="@color/colorPrimary"
+      title="@string/label_category"
+      />
+  <tab
+      activeColor="@color/colorPrimary"
+      icon="@drawable/ic_favorite_white_24dp"
+      id="@+id/tab_favorite"
+      inActiveColor="@color/colorPrimary"
+      title="@string/label_favorite"
+      />
+</tabs>
